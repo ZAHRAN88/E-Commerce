@@ -1737,8 +1737,8 @@ body {
        
   }
     .breadcrumbs-style .breadcrumb-left .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-      content: "\f061";
-  font-family: "Font Awesome 5 Free";
+      content: ">";
+ 
   font-size: 14px; /* Adjust the size as needed */
   position: absolute;
   line-height: 40px;
