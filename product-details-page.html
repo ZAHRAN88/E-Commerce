@@ -61,7 +61,11 @@
     </div>
     <!--====== Preloader Part Ends ======-->
 
-         <!--====== Navbar Style 7 Part Start ======-->
+     <!--====== Navbar Style 7 Part Start ======-->
+       <!-- ============ alert container start -->
+       <div id="alertContainer" class="position-fixed top-0 end-0 p-3" style="z-index: 1000">
+    </div>
+<!-- ============ alert container end -->
     <div class="navigation">
         <header class="navbar-style-7 position-relative">
             <div class="container">
@@ -90,26 +94,7 @@
                             <!-- navbar cart Ends -->
                         </div>
                     </div>
-                    <!-- navbar search start -->
-                    <div class="navbar-search mt-15 search-style-5">
-                        <div class="search-select">
-                            <select>
-                                <option value="">All</option>
-                                <option value="1">option 01</option>
-                                <option value="2">option 02</option>
-                                <option value="3">option 03</option>
-                                <option value="4">option 04</option>
-                                <option value="5">option 05</option>
-                            </select>
-                        </div>
-                        <div class="search-input">
-                            <input type="text" placeholder="Search">
-                        </div>
-                        <div class="search-btn">
-                            <button><i class="lni lni-search-alt"></i></button>
-                        </div>
-                    </div>
-                    <!-- navbar search Ends -->
+                   
                 </div>
                 <!-- navbar mobile Start -->
             </div>
@@ -135,6 +120,7 @@
                             <!-- navbar menu Start -->
                             <div class="navbar-menu">
                                 <ul class="main-menu">
+                                    <li><a href="index.html">Shop Page</a></li>
                                     <li class="position-static menu-item-has-children">
                                         <a href="#">Womans</a>
                                         <!-- sub mega dropdown Start -->
@@ -165,18 +151,7 @@
                                                                 <li><a href="category.html">Party Dresses</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li class="mega-dropdown-list menu-item-has-children">
-                                                            <h6 class="heading-6 font-weight-500 mega-title">Accessories
-                                                            </h6>
-                                                            <ul>
-                                                                <li><a href="category.html">Hoodies & Sweatshirts</a></li>
-                                                                <li><a href="category.html">Jackets & Coats</a></li>
-                                                                <li><a href="category.html">Pants</a></li>
-                                                                <li><a href="category.html">Jeans</a></li>
-                                                                <li><a href="category.html">Tops & Tees</a></li>
-                                                                <li><a href="category.html">Casual Shorts</a></li>
-                                                            </ul>
-                                                        </li>
+                                                       
                                                         <li class="mega-dropdown-list">
                                                             <img src="assets/images/menu-slider-1.png" alt="">
                                                         </li>
@@ -186,30 +161,15 @@
                                         </ul>
                                         <!-- sub mega dropdown Ends -->
                                     </li>
-                                    <li><a href="category.html">mens</a></li>
-                                    <li><a href="category.html">Kids</a></li>
-                                    <li><a href="category.html">Accessories</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Pages</a>
-                                        <!-- sub menu Start -->
-                                        <ul class="sub-menu">
-                                            <li><a href="about-page.html">About Page</a></li>
-                                            <li><a href="account-page.html">Account Page</a></li>
-                                            <li><a href="cart-page.html">Cart Page</a></li>
-                                            <li><a href="category.html">Category Page</a></li>
-                                            <li><a href="checkout-page.html">Checkout Page</a></li>
-                                            <li><a href="contact-page.html">Contact Page</a></li>
-                                            <li><a href="login-page.html">Log In Page</a></li>
-                                            <li><a href="product-details-page.html">Product Details Page</a></li>
-                                            <li><a href="signup-page.html">Sign Up Page</a></li>
-                                        </ul>
-                                        <!-- sub menu Ends -->
-                                    </li>
+                                    <li><a href="about-page.html">About Page</a></li>
+                                    
+                                  
+                                   
                                 </ul>
                             </div>
                             
-                                <!-- navbar cart start -->
-                                <div class="conntt d-flex">  <div class="navbar-cart" >
+                                 <!-- navbar cart start -->
+                                 <div class="conntt d-flex">  <div class="navbar-cart" >
                                     <a class="icon-btn primary-icon-text icon-text-btn" href="cart.html">
                                         <img src="assets/images/icon-svg/cart-1.svg" alt="Icon">
                                         <span class="icon-text text-style-1" id="cartItemCount">0</span>
@@ -217,7 +177,7 @@
                                 
                                     
                                 </div>
-                                <div class="navbar-cart"> <a class="icon-btn primary-icon-text icon-text-btn  " href="wishlist.html">
+                                <div class="navbar-cart"> <a class="icon-btn primary-icon-text icon-text-btn  " href="javascript:void(0)">
                                         <i class="fa-regular fa-heart" style="color: #5716d0;"></i>
                                         <span class="icon-text text-style-1" id="whisItemcount">0</span>
                                     </a></div>
