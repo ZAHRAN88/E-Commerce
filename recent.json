@@ -1,0 +1,72 @@
+[
+    {
+        "icon-text":"none",
+        "img1":"assets/images/product-4/product-1.jpg",
+        "img2":"assets/images/product-4/product-2.jpg",
+        "rate":"4",
+        "title":"Metro 38 Date",
+        "subtitle":"Reference 1102",
+        "price":"$ 399",
+    "quantity":"1"
+    }
+    ,
+    {
+        "icon-text":"none",
+        "img1":"assets/images/product-4/product-3.jpg",
+        "img2":"assets/images/product-4/product-4.jpg",
+        "rate":"5",
+        "title":"Man's Shoe",
+        "subtitle":"Reference 1102",
+        "price":"$ 399",
+    "quantity":"1"
+
+    }
+    ,
+    {
+        "icon-text":"20% off",
+        "img1":"assets/images/product-4/product-5.jpg",
+        "img2":"assets/images/product-4/product-6.jpg",
+        "rate":"4.5",
+        "title":"Lotto T Shirt",
+        "subtitle":"Reference 1102",
+        "price":"$ 399",
+    "quantity":"1"
+
+    }
+    ,
+    {
+        "icon-text":"none",
+        "img1":"assets/images/product-4/product-7.jpg",
+        "img2":"assets/images/product-4/product-8.jpg",
+        "rate":"4.5",
+        "title":"Smart Watch",
+        "subtitle":"Reference 1102",
+        "price":"$ 399",
+    "quantity":"1"
+
+    }
+    ,
+    {
+        "icon-text":"none",
+        "img1":"assets/images/product-4/product-9.jpg",
+        "img2":"assets/images/product-4/product-10.jpg",
+        "rate":"3",
+        "title":"Smart Gadget",
+        "subtitle":"Reference 1102",
+        "price":"$ 399",
+    "quantity":"1"
+
+    }
+    ,
+    {
+        "icon-text":"Out Of Stoke",
+        "img1":"assets/images/product-4/product-11.jpg",
+        "img2":"assets/images/product-4/product-12.jpg",
+        "rate":"4.5",
+        "title":"Polo Cap",
+        "subtitle":"Reference 1102",
+        "price":"$ 399",
+    "quantity":"1"
+
+    }
+]

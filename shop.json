@@ -1,0 +1,68 @@
+[
+    {
+        "text-icon":"NEW",
+        "img1":"assets/images/product-1/product-1.jpg",
+        "img2":"assets/images/product-1/product-2.jpg",
+        "title":"Metro 38 Date",
+        "subtitle":"Reference 1102",
+        "price":"$ 399"
+    }
+    ,
+    {
+        "text-icon":"20% off",
+        "img1":"assets/images/product-1/product-5.jpg",
+        "img2":"assets/images/product-1/product-6.jpg",
+        "title":"Lady Shoe",
+        "subtitle":"Reference 1103",
+        "price":"$ 399"
+        
+
+    }
+    ,
+    {
+        "text-icon":"none",
+        "img1":"assets/images/product-1/product-3.jpg",
+        "img2":"assets/images/product-1/product-4.jpg",
+        "title":"Casio 09 Date",
+        "subtitle":"Reference 1112",
+        "price":"$ 399"
+        
+
+    }
+    ,
+    {
+        "text-icon":"none",
+        "img1":"assets/images/product-1/product-9.jpg",
+        "img2":"assets/images/product-1/product-10.jpg",
+        "title":"Polo T Shirt",
+        "subtitle":"Reference 1202",
+        "price":"$ 399"
+
+    }
+    ,
+    {
+        "text-icon":"40% off",
+        "img1":"assets/images/product-1/product-11.jpg",
+        "img2":"assets/images/product-1/product-12.jpg",
+        "title":"Lotto T Shirt",
+        "subtitle":"Reference 112",
+        "price":"$ 399"
+
+    },
+    {
+        "text-icon":"HOT",
+        "img1":"https://i.dummyjson.com/data/products/4/1.jpg",
+        "img2":"https://i.dummyjson.com/data/products/4/3.jpg",
+        "title":"OPPOF19",
+        "subtitle":"OPPO F19 is officially announced on April 2021.",
+        "price":"$ 280"
+
+
+    }
+]
+
+
+
+
+
+
