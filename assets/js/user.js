@@ -1,69 +1,130 @@
-const jsonData = [
-    {
-        "userName": "Zahran",
-        "email": "palastinearabia@gmail.com",
-        "phone": "+20 109 2088 922",
-        "address": "Company Inc., 8901 Marmora Road, Glasgow, D04 89GR.",
-        "gender": "Male",
-        "BD": "26 April 2002",
-        "pPic": "assets/images/Zahran.jpg",
-        "pCvr": "assets/images/Zahrancvr.jpg"
-    },
-    // ... (other objects in the array) ...
-];
-
-// Function to generate dynamic content based on JSON data
-function generateDynamicContent(data) {
-    return data.map(item => `
-        <div class="single-details-item d-flex flex-wrap">
-            <div class="details-title">
-                <h6 class="title">${item.userName}</h6>
-            </div>
-            <div class="details-content media-body">
-                <p>${item.email}</p>
-                <p>${item.phone}</p>
-                <p>${item.address}</p>
-                <p>${item.gender}</p>
-                <p>${item.BD}</p>
-            </div>
-        </div>
-    `).join('');
-}
-
-// Get the elements where dynamic content will be inserted
-const dynamicProfileDetails = document.getElementById('dynamic-profile-details');
-const profilePhoto = document.getElementById('profile-photo');
-const profileCoverPhoto = document.getElementById('profile-cover-photo');
-const profileName = document.getElementById('profile-name');
-const profileEmail = document.getElementById('profile-email');
-
-// Generate and insert dynamic content into the HTML
-dynamicProfileDetails.innerHTML = generateDynamicContent(jsonData);
-
-// Set profile photo, cover photo, name, and email
-profilePhoto.src = jsonData[0].pPic; // Assuming the first item in the array
-profileCoverPhoto.style.backgroundImage = `url(${jsonData[0].pCvr})`;
-profileName.textContent = jsonData[0].userName;
-profileEmail.textContent = jsonData[0].email;
+const jsonData = 
+    [
+        {
+            "userName":"Mohamed Zahran",
+            "surname":"Zahran",
+            "email":"palastinearabia@gmail.com",
+            "phone":"+20 109 2088 922",
+            "address":"Company Inc., 8901 Marmora Road, Glasgow, D04 89GR.",
+            "gender":"Male",
+            "bd": "26 April 2002",
+            "pPic":"assets/images/Zahran.jpg",
+            "pCvr":"assets/images/Zahrancvr.jpg",
+            "id":"Zahran77",
+            "Password":"12345678"
+            
+    
+                   
+        },
+        {
+            "userName":"Assem Omar",
+            "surname":"Boza",
+    
+            "email":"Boza@gmail.com",
+            "phone":"+20 109 691 7704",
+            "address":"Company Inc., 8901 Marmora Road, Glasgow, D04 89GR.",
+            "gender":"Male",
+            "bd": "16 October 2002",
+            "pPic":"assets/images/Assem.jpg",
+            "pCvr":"assets/images/Assemcvr.jpg",
+            "id":"Zahran77",
+            "Password":"12345678"
+                   
+        },
+        {
+            "userName":"Mohamed Nashaat",
+            "surname":"Nashaat",
+    
+            "email":"Nashaat@gmail.com",
+            "phone":"+20 10 969 17 704",
+            "address":"Company Inc., 8901 Marmora Road, Glasgow, D04 89GR.",
+            "gender":"Male",
+            "bd": "27 March 2003",
+            "pPic":"assets/images/Nashaat.jpg",
+            "pCvr":"assets/images/Nashaatcvr.jpg",
+            "id":"Zahran77",
+            "Password":"123456789"
+                   
+        }
+        ,
+        {
+            "userName":"Mohamed Barakat",
+            "surname":"ملك الفرونت",
+    
+            "email":"Barakat@gmail.com",
+            "phone":"+20 115 678 0904",
+            "address":"Company Inc., 8901 Marmora Road, Glasgow, D04 89GR.",
+            "gender":"Male",
+            "bd": "01 November 1993",
+            "pPic":"assets/images/profile-photo.jpg",
+            "pCvr":"assets/images/barakatcvr.jpg",
+            "id":"Zahran77",
+            "Password":"123456789"
+                   
+        }
+    ]
+;
 
 
 // ============== Validate user =====================
 
-// Wait for the DOM to be ready
-const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-document.getElementById('signInButton').addEventListener('click', function(event) {
-    
 
-    // Get the input values
-    
 
-    // Validate email and password
-    if (email === 'palastinearabia@gmail.com' && password === '12345678') {
-        // Set the href attribute dynamically
-        document.getElementById('location').href='usraccount.html';
-    } else {alert('Invalid email or password. Please try again.');
-        // Display an error message or handle invalid credentials as needed
-        
+function validate() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  // Iterate over the user data array
+  for (const user of jsonData) {
+    if (user.email === email && user.Password === password) {
+      // Match found, store user data in local storage
+      localStorage.setItem("currentUser", JSON.stringify(user));
+
+      // Redirect to usraccount.html
+      window.location.href = "usraccount.html";
+      return; // Exit the function
     }
-});
+  }
+
+  // If the loop completes without finding a match, display an error message
+  alert("Invalid email or password. Please try again.");
+}
+
+// save usr to LS if email name founded in data json
+
+// get usr details
+
+// Retrieve the user object from local storage
+const userJSON = localStorage.getItem("currentUser");
+
+// Parse the JSON string to get the user object
+const usr = JSON.parse(userJSON) || {};
+
+// Check if usr is not null and contains expected properties
+if (usr) {
+    const crntusrcvr = document.getElementById("crntusrcvr");
+    const crntusrpic = document.getElementById("crntusrpic");
+    const namee = document.getElementById("crntusrName");
+    const usrmail = document.querySelector("#crntusrEmail");
+    const usrmaill = document.querySelector("#crntusrEmaill");
+    const surName = document.getElementById("crntusrSurname");
+    const num = document.getElementById("crntusrno");
+    const adrs = document.getElementById("crntusraddrs");
+    const gndr = document.getElementById("crntusrgndr");
+    const birthdate = document.getElementById("crntusrbd");
+
+    // Update HTML elements with user data
+    crntusrcvr.style.backgroundImage = `url(${usr.pCvr})`;
+    crntusrpic.src = usr.pPic;
+    namee.textContent = usr.userName;
+    usrmail.textContent = usr.email;
+    usrmaill.textContent = usr.email;
+    surName.textContent = usr.surname;
+    num.textContent = usr.phone;
+    adrs.textContent = usr.address;
+    gndr.textContent = usr.gender;
+    birthdate.textContent = usr.bd;
+} else {
+    // Handle the case where the user object is not found or doesn't have expected properties
+    console.error('User object not found or invalid.');
+}

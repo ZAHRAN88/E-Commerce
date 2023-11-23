@@ -1,11 +1,12 @@
 [
     {
-        "userName":"Zahran",
+        "userName":"Mohamed Zahran",
+        "surname":"Zahran",
         "email":"palastinearabia@gmail.com",
         "phone":"+20 109 2088 922",
         "address":"Company Inc., 8901 Marmora Road, Glasgow, D04 89GR.",
         "gender":"Male",
-        "BD": "26 April 2002",
+        "bd": "26 April 2002",
         "pPic":"assets/images/Zahran.jpg",
         "pCvr":"assets/images/Zahrancvr.jpg",
         "id":"Zahran77",
@@ -16,24 +17,32 @@
     },
     {
         "userName":"Assem Omar",
-        "email":"palastinearabia@gmail.com",
-        "phone":"+20 109 2088 922",
+        "surname":"Boza",
+
+        "email":"Boza@gmail.com",
+        "phone":"+20 109 691 7704",
         "address":"Company Inc., 8901 Marmora Road, Glasgow, D04 89GR.",
         "gender":"Male",
-        "BD": "16 October 2002",
+        "bd": "16 October 2002",
         "pPic":"assets/images/Assem.jpg",
-        "pCvr":"assets/images/Assemcvr.jpg"
+        "pCvr":"assets/images/Assemcvr.jpg",
+        "id":"Zahran77",
+        "Password":"12345678"
                
     },
     {
-        "userName":"Nashaat",
-        "email":"palastinearabia@gmail.com",
+        "userName":"Mohamed Nashaat",
+        "surname":"Zahran",
+
+        "email":"Nashaat@gmail.com",
         "phone":"+20 10 969 17 704",
         "address":"Company Inc., 8901 Marmora Road, Glasgow, D04 89GR.",
         "gender":"Male",
-        "BD": "27 March 2003",
+        "bd": "27 March 2003",
         "pPic":"assets/images/Nashaat.jpg",
-        "pCvr":"assets/images/Nashaatcvr.jpg"
+        "pCvr":"assets/images/Nashaatcvr.jpg",
+        "id":"Zahran77",
+        "Password":"12345678"
                
     }
 ]
