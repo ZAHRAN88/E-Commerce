@@ -147,6 +147,7 @@ function addToCart(item) {
   
     // Update count
     updatecount();
+    updatecountdesk();
   }
   
 
@@ -164,6 +165,7 @@ function addToWhislist(item) {
 
     
     updatewish ()
+    updatewishdesk ()
 }
 // Function to save a single object in localStorage
 function saveCartItem(item) {
@@ -185,12 +187,25 @@ function updatecount(){
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 cartItemCount.textContent=cartItems.length
 }
+function updatecountdesk(){
+    const cartItemCount=document.querySelector(".cartItemCount")
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+cartItemCount.textContent=cartItems.length
+}
+updatecountdesk()
 updatecount()
 function updatewish (){
     const wishlistItems = JSON.parse(localStorage.getItem('wishlist')) || [];
     const whisItemcount =document.getElementById("whisItemcount");
     whisItemcount.textContent=wishlistItems.length
   }
+
+  function updatewishdesk (){
+    const wishlistItems = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const whisItemcount =document.querySelector(".whisItemcount");
+    whisItemcount.textContent=wishlistItems.length
+  }
+  updatewishdesk ()
   updatewish ()
 
 

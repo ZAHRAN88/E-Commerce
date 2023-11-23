@@ -78,23 +78,32 @@
                     <div class="row align-items-center">
                         <div class="col-3">
                             <!-- navbar cart start -->
-                            <div class="navbar-toggle icon-text-btn">
+                            <div class="navbar-toggle icon-text-btn mt">
                                 <a class="icon-btn primary-icon-text mobile-menu-open-7" href="javascript:void(0)">
                                     <i class="mdi mdi-menu"></i>
                                 </a>
                             </div>
                             <!-- navbar cart Ends -->
                         </div>
-                        <div class="col-6">
-                            <!-- desktop logo Start -->
-                            <div class="mobile-logo d-sm-none text-center">
-                                <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
-                            </div>
-                            <!-- desktop logo Ends -->
-                        </div>
-                        <div class="col-3">
+                        
+                        <div class="col-9 me-auto">
                             <!-- navbar cart start -->
+                            <div class="conntt ">  
+                                <div class="navbar-cart" >
+                                <a class="icon-btn primary-icon-text icon-text-btn" href="cart.html">
+                                    <img src="assets/images/icon-svg/cart-1.svg" alt="Icon">
+                                    <span class="icon-text text-style-1" id="cartItemCount">0</span>
+                                </a>
+                            </div>
+                            <div class="navbar-cart"> <a class="icon-btn primary-icon-text icon-text-btn  " href="javascript:void(0)">
+                                    <i class="fa-regular fa-heart" style="color: #5716d0;"></i>
+                                    <span class="icon-text text-style-1" id="whisItemcount">0</span>
+                                </a></div>
+                            </div>
                           
+                            
+                                
+                            
                             <!-- navbar cart Ends -->
                         </div>
                     </div>
@@ -124,7 +133,7 @@
                             <!-- navbar menu Start -->
                             <div class="navbar-menu">
                                 <ul class="main-menu">
-                                    <li><a href="index.html">Shop Page</a></li>
+                                    <li><a href="index.html">Home</a></li>
                                     <li class="position-static menu-item-has-children">
                                         <a href="#">Womans</a>
                                         <!-- sub mega dropdown Start -->
@@ -165,7 +174,9 @@
                                         </ul>
                                         <!-- sub mega dropdown Ends -->
                                     </li>
-                                    <li><a href="about-page.html">About Page</a></li>
+                                    <li><a href="about-page.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="login.html">Login</a></li>
                                     
                                   
                                    
@@ -173,19 +184,20 @@
                             </div>
                             
                                  <!-- navbar cart start -->
-                                 <div class="conntt d-flex">  <div class="navbar-cart" >
+                                 <div class="conntt  d-none d-md-flex"> 
+                                     <div class="navbar-cart" >
                                     <a class="icon-btn primary-icon-text icon-text-btn" href="cart.html">
                                         <img src="assets/images/icon-svg/cart-1.svg" alt="Icon">
-                                        <span class="icon-text text-style-1" id="cartItemCount">0</span>
+                                        <span class="icon-text text-style-1 cartItemCount " id="cartItemCount">0</span>
                                     </a>
                                 
                                     
                                 </div>
                                 <div class="navbar-cart"> <a class="icon-btn primary-icon-text icon-text-btn  " href="javascript:void(0)">
                                         <i class="fa-regular fa-heart" style="color: #5716d0;"></i>
-                                        <span class="icon-text text-style-1" id="whisItemcount">0</span>
+                                        <span class="icon-text text-style-1 whisItemcount" id="whisItemcount">0</span>
                                     </a></div>
-                                   </div>
+                                </div>
                               
                                 
                                     

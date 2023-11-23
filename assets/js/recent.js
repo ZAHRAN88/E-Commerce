@@ -168,6 +168,7 @@ function addToCartRecent(item) {
   
     // Update count
     updatecount();
+    updatecountdesk()
   }
 
 
@@ -181,7 +182,7 @@ function addToWhishlistRecent(item) {
     // Save the updated cart items back to local storage
     localStorage.setItem('wishlist', JSON.stringify(whishItems));
 
-   
+    updatewishdesk ()
 
     updatewish ()
 }
@@ -202,13 +203,27 @@ displayDataRecent();
 
 function updatecount(){
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-cartItemCount.textContent=cartItems.length
+    const cartcount=document.getElementById("cartItemCount")
+    cartcount.textContent=cartItems.length
 }
-updatecount()
+function updatecountdesk(){
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartcount=document.querySelector(".cartItemCount")
+    cartcount.textContent=cartItems.length
+}
+updatecountdesk()
+
 
 function updatewish (){
     const wishlistItems = JSON.parse(localStorage.getItem('wishlist')) || [];
     const whisItemcount =document.getElementById("whisItemcount");
     whisItemcount.textContent=wishlistItems.length
   }
-  updatewish ()
+  function updatewishdesk (){
+    const wishlistItems = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const whisItemcount =document.querySelector(".whisItemcount");
+    whisItemcount.textContent=wishlistItems.length
+  }
+  updatecount()
+  updatewish()
+  updatewishdesk ()

@@ -714,9 +714,7 @@ $(function() {
     =              Form Validate                  =
     =============================================*/
 
-	$.validate({
-        lang: 'es',
-    });
+	
     
     /*=====  End of Form Validate  ======*/
     

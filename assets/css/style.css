@@ -1,7 +1,7 @@
  /*=====  Common Style =====*/
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap");
 body {
-         font-family: "Rubik", sans-serif;
+         font-family: "Rubik", Verdana, Geneva, Tahoma, sans-serif;
          font-weight: normal;
          font-style: normal;
          color: rgba(0, 0, 0, 0.64);
@@ -4195,3 +4195,770 @@ body {
   }
   
 
+/*==================================================================
+                   13. Login or Registration css
+==================================================================*/
+/*=====  Login Registration  Style 1 =====*/
+.login-registration-style-1 {
+  max-width: 350px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 55px 25px 60px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+}
+
+@media (max-width: 767px) {
+  .login-registration-style-1 {
+    padding: 30px 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login-registration-style-1 {
+    padding: 55px 30px 60px;
+  }
+}
+
+.login-registration-style-1 ul {
+  padding-top: 20px;
+}
+
+.login-registration-style-1 ul li a {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 10px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.login-registration-style-1 ul li a.facebook-login-registration {
+  background-color: #3C5898;
+}
+
+.login-registration-style-1 ul li a.google-login-registration {
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.login-registration-style-1 ul li a img,
+.login-registration-style-1 ul li a i {
+  float: left;
+  line-height: 40px;
+}
+
+.login-registration-style-1 ul li a img {
+  position: relative;
+  left: -11px;
+}
+
+.login-registration-style-1 .account {
+  color: #000;
+  font-weight: 300;
+  padding-top: 28px;
+}
+
+.login-registration-style-1 .single-form .forget {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #542DED;
+  line-height: 16px;
+  margin-top: 6px;
+}
+
+.login-registration-style-1 .single-form .form-input [type="password"] {
+  padding-right: 40px;
+}
+
+.login-registration-style-1 .single-form .form-input span {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 24px;
+  color: #7D7D7D;
+}
+
+.login-registration-style-1 .single-form .form-input .main-btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .login-registration-style-1 .single-form .form-input.form textarea,
+  .login-registration-style-1 .single-form .form-input.form input {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login-registration-style-1 .single-form .form-input.form textarea,
+  .login-registration-style-1 .single-form .form-input.form input {
+    margin-top: 0;
+  }
+}
+
+.login-registration-style-1 .login {
+  color: #000;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .login-registration-style-1 .login {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login-registration-style-1 .login {
+    font-size: 16px;
+  }
+}
+
+.login-registration-style-1 .login a {
+  text-transform: uppercase;
+  color: #542DED;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .login-registration-style-1 .login a {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login-registration-style-1 .login a {
+    margin-left: 20px;
+  }
+}
+
+.login-registration-style-1.registration {
+  max-width: 100%;
+}
+
+/*=====  Login Registration Dark  Style 1 =====*/
+.login-registration-dark-style-1 {
+  background-color: #161359;
+}
+
+.login-registration-dark-style-1 .title {
+  color: #fff;
+}
+
+.login-registration-dark-style-1 ul {
+  padding-top: 20px;
+}
+
+.login-registration-dark-style-1 .account {
+  color: #fff;
+}
+
+.login-registration-dark-style-1 .single-form .forget {
+  color: #fff;
+}
+
+.login-registration-dark-style-1 .single-form .form-input span {
+  color: #E14C7B;
+}
+
+.login-registration-dark-style-1 .single-checkbox input[type="checkbox"] + label span {
+  border-color: #E14C7B;
+}
+
+.login-registration-dark-style-1 .single-checkbox input[type="checkbox"] + label span::before {
+  background-color: #E14C7B;
+}
+
+.login-registration-dark-style-1 .single-checkbox p {
+  color: #fff;
+}
+
+.login-registration-dark-style-1 .login {
+  color: #fff;
+}
+
+.login-registration-dark-style-1 .login a {
+  text-transform: uppercase;
+  color: #E14C7B;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+/*=====  Login Registration  Style 2 =====*/
+.login-registration-style-2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 55px 30px 60px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+}
+
+@media (max-width: 767px) {
+  .login-registration-style-2 {
+    padding: 30px 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login-registration-style-2 {
+    padding: 55px 30px 60px;
+  }
+}
+
+.login-registration-style-2 ul {
+  padding-top: 20px;
+}
+
+.login-registration-style-2 ul li {
+  display: inline-block;
+}
+
+.login-registration-style-2 ul li + li {
+  margin-left: 4px;
+}
+
+.login-registration-style-2 ul li a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-registration-style-2 ul li a.facebook-login-registration {
+  background-color: #3c5898;
+}
+
+.login-registration-style-2 ul li a.google-login-registration {
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.login-registration-style-2 .account {
+  color: #000;
+  font-weight: 300;
+  padding-right: 10px;
+}
+
+.login-registration-style-2 .single-form .form-input [type="password"] {
+  padding-right: 40px;
+}
+
+.login-registration-style-2 .single-form .form-input span {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 24px;
+  color: #7D7D7D;
+}
+
+.login-registration-style-2 .single-form .form-input .main-btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .login-registration-style-2 .single-form .form-input.form textarea,
+  .login-registration-style-2 .single-form .form-input.form input {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login-registration-style-2 .single-form .form-input.form textarea,
+  .login-registration-style-2 .single-form .form-input.form input {
+    margin-top: 0;
+  }
+}
+
+.login-registration-style-2 .login-checkbox-forget .forget {
+  font-size: 16px;
+  font-weight: 500;
+  color: #542DED;
+  line-height: 16px;
+  margin-top: 16px;
+}
+
+.login-registration-style-2 .login {
+  color: #000;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .login-registration-style-2 .login {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login-registration-style-2 .login {
+    font-size: 16px;
+  }
+}
+
+.login-registration-style-2 .login a {
+  text-transform: uppercase;
+  color: #542DED;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .login-registration-style-2 .login a {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .login-registration-style-2 .login a {
+    margin-left: 20px;
+  }
+}
+
+.login-registration-style-2.registration {
+  max-width: 100%;
+}
+
+/*=====  Login Registration Dark  Style 2 =====*/
+.login-registration-dark-style-2 {
+  background-color: #161359;
+}
+
+.login-registration-dark-style-2 .title {
+  color: #fff;
+}
+
+.login-registration-dark-style-2 .account {
+  color: #fff;
+  font-weight: 300;
+  padding-right: 10px;
+}
+
+.login-registration-dark-style-2 .single-form .form-input span {
+  color: #E14C7B;
+}
+
+.login-registration-dark-style-2 .single-checkbox input[type="checkbox"] + label span {
+  border-color: #E14C7B;
+}
+
+.login-registration-dark-style-2 .single-checkbox input[type="checkbox"] + label span::before {
+  background-color: #E14C7B;
+}
+
+.login-registration-dark-style-2 .single-checkbox p {
+  color: #fff;
+}
+
+.login-registration-dark-style-2 .login-checkbox-forget .forget {
+  color: #E14C7B;
+}
+
+.login-registration-dark-style-2 .login {
+  color: #fff;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.login-registration-dark-style-2 .login a {
+  text-transform: uppercase;
+  color: #E14C7B;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+/*==================================================================
+                    Contact css
+==================================================================*/
+/*=====  Contact  Style 1 =====*/
+.contact-style-1 {
+  width: 100%;
+  padding: 55px 25px 60px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+}
+
+.contact-dark-style-1 {
+  background-color: #161359;
+}
+
+.contact-dark-style-1 .title {
+  color: #fff;
+}
+
+.contact-dark-style-1 p {
+  color: #fff;
+}
+
+.contact-dark-style-1 .select-style-1 label {
+  color: #fff;
+}
+
+.contact-dark-style-1 .select-style-1 .select-items {
+  position: relative;
+}
+
+.contact-dark-style-1 .select-style-1 .select-items .nice-select {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-dark-style-1 .select-style-1 .select-items .nice-select:focus {
+  border-color: #00D4E0;
+}
+
+.contact-dark-style-1 .select-style-1 .select-items .nice-select::after {
+  border-color: #fff;
+}
+
+.contact-dark-style-1 .select-style-1 .select-items .nice-select .current {
+  color: #fff;
+}
+
+.contact-dark-style-1 .select-style-1 .select-items i {
+  color: #fff;
+}
+
+/*=====  Contact  Style 2 =====*/
+.contact-style-2 {
+  width: 100%;
+  padding: 35px 30px 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+}
+
+@media (max-width: 767px) {
+  .contact-style-2 {
+    padding: 25px 20px 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact-style-2 {
+    padding: 35px 30px 40px;
+  }
+}
+
+.contact-style-2 .contact-info li + li {
+  padding-top: 15px;
+}
+
+.contact-style-2 .contact-info li .single-contact-info .contact-info-icon i {
+  font-size: 24px;
+  color: #542DED;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.contact-style-2 .contact-info li .single-contact-info .contact-info-content {
+  padding-left: 10px;
+}
+
+.contact-style-2 .contact-info li .single-contact-info .contact-info-content p {
+  font-size: 14px;
+  color: #000;
+}
+
+.contact-style-2 .title {
+  margin-top: 25px;
+}
+
+.contact-style-2 .sub-title {
+  margin-top: 10px;
+  color: #000;
+}
+
+.contact-style-2 .contact-social {
+  padding-top: 30px;
+}
+
+.contact-style-2 .contact-social p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.64);
+  padding-right: 8px;
+  line-height: 40px;
+}
+
+@media (max-width: 767px) {
+  .contact-style-2 .contact-social p {
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact-style-2 .contact-social p {
+    line-height: 40px;
+  }
+}
+
+.contact-style-2 .contact-social .social li {
+  display: inline-block;
+}
+
+.contact-style-2 .contact-social .social li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #542DED;
+}
+
+@media (max-width: 767px) {
+  .contact-style-2 .contact-social .social li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact-style-2 .contact-social .social li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+/*=====  Contact Dark Style 2 =====*/
+.contact-dark-style-2 {
+  background-color: #161359;
+}
+
+.contact-dark-style-2 .contact-info li .single-contact-info .contact-info-icon i {
+  color: #00D4E0;
+}
+
+.contact-dark-style-2 .contact-info li .single-contact-info .contact-info-content p {
+  color: #fff;
+}
+
+.contact-dark-style-2 .title {
+  color: #fff;
+}
+
+.contact-dark-style-2 .sub-title {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.contact-dark-style-2 .contact-social {
+  padding-top: 30px;
+}
+
+.contact-dark-style-2 .contact-social p {
+  color: rgba(255, 255, 255, 0.74);
+  padding-right: 8px;
+  line-height: 40px;
+}
+
+.contact-dark-style-2 .contact-social .social li a {
+  color: #fff;
+}
+
+
+/*===== All Profile Style =====*/
+.profile .profile-header .profile-cover-photo {
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
+}
+
+.profile .profile-header .profile-author {
+  padding: 32px;
+  padding-top: 0;
+  position: relative;
+  z-index: 9;
+  margin-top: -80px;
+}
+
+.profile .profile-header .profile-author .profile-name .name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+
+.profile .profile-header .profile-author .profile-name .email {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  margin-top: 8px;
+}
+
+.profile .profile-header .profile-author .profile-photo img {
+  width: 160px;
+  border-radius: 50%;
+}
+
+.profile .profile-title {
+  position: relative;
+  background-color: #F2F2F2;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 8px;
+}
+
+.profile .profile-title .title {
+  line-height: 48px;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.profile .profile-title .profile-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #542DED;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.profile .profile-details .single-details-item {
+  padding: 8px 16px 0;
+}
+
+.profile .profile-details .single-details-item .details-title {
+  width: 145px;
+  margin-top: 8px;
+}
+
+@media (max-width: 767px) {
+  .profile .profile-details .single-details-item .details-title {
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile .profile-details .single-details-item .details-title {
+    width: 145px;
+  }
+}
+
+.profile .profile-details .single-details-item .details-title .title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #4C4C4C;
+}
+
+.profile .profile-details .single-details-item .details-content {
+  margin-top: 8px;
+}
+
+.profile .profile-details .single-details-item .details-content p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  font-weight: 400;
+}
+
+.profile .single-card-info {
+  padding: 16px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  margin-top: 16px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.profile .single-card-info .card-icon img {
+  border-radius: 4px;
+}
+
+.profile .single-card-info .card-info {
+  padding-left: 16px;
+}
+
+.profile .single-card-info .card-info .card-name {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000;
+}
+
+.profile .single-card-info .card-info .card-number {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #4C4C4C;
+  margin-top: 5px;
+}
+
+.profile .single-card-info .card-info .card-number span {
+  margin-left: 8px;
+}
+
+/*===== All Profile Dark Style =====*/
+.profile-dark {
+  background-color: #161359;
+}
+
+.profile-dark .profile .profile-header .profile-author .profile-name .name {
+  color: #fff;
+}
+
+.profile-dark .profile .profile-header .profile-author .profile-name .email {
+  color: #fff;
+}
+
+.profile-dark .profile .profile-title {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.profile-dark .profile .profile-title .title {
+  color: #fff;
+}
+
+.profile-dark .profile .profile-title .profile-link {
+  color: #E14C7B;
+}
+
+.profile-dark .profile .profile-details .single-details-item .details-title .title {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.profile-dark .profile .profile-details .single-details-item .details-content p {
+  color: #fff;
+}
+
+.profile-dark .profile .single-card-info {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.profile-dark .profile .single-card-info .card-info .card-name {
+  color: #fff;
+}
+
+.profile-dark .profile .single-card-info .card-info .card-number {
+  color: rgba(255, 255, 255, 0.74);
+}
