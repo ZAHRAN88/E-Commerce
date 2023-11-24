@@ -77,6 +77,10 @@ async function displayData() {
             titleLink.innerText = item.title;
             title.appendChild(titleLink);
 
+            title.addEventListener('click',()=>{
+                saveCartItem(item)
+            })
+
             const subtitle = document.createElement('p');
             subtitle.innerText = item.subtitle;
 
@@ -96,9 +100,8 @@ async function displayData() {
                 
                
             });
-            title.addEventListener('click',()=>{
-                saveCartItem(item)
-            })
+
+          
             
             addWishlist.addEventListener('click',(e)=>{
                 console.log(e.target);
