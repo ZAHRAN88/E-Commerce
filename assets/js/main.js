@@ -1257,7 +1257,116 @@ $(function() {
     
 });
 
+document.addEventListener('keydown', function (e) {
+    // If F12 key is pressed
+    if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+    }
+});
 
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Function to handle when the dev tools are opened
+    const handleDevTools = () => {
+        document.body.style.display = 'none';
+        alert('Developer tools are not allowed!');
+        console.log('Developer tools are open.');
+    };
 
+    // Set up the event listener for dev tools
+    window.addEventListener('devtoolschange', (e) => {
+        if (e.detail.isOpen) {
+            handleDevTools();
+        }
+    });
 
+    // Check for dev tools initially
+    const isDevToolsOpen = () => {
+        return new Promise((resolve) => {
+            const threshold = 160;
+            let startTime;
+            const check = () => {
+                if (window.outerWidth - window.innerWidth > threshold) {
+                    resolve(true);
+                } else {
+                    resolve(false);
+                }
+                window.removeEventListener('resize', check);
+            };
+            startTime = performance.now();
+            window.addEventListener('resize', check);
+            check();
+        });
+    };
+
+    isDevToolsOpen().then((open) => {
+        if (open) {
+            handleDevTools();
+        } else {
+            console.log('Developer tools are not open.');
+        }
+    });
+});
+(function () {
+    (function a() {
+        try {
+            (function b(i) {
+                if (('' + (i / i)).length !== 1 || i % 20 === 0) {
+                    (function () { }).constructor('debugger')()
+                } else {
+                    debugger
+                }
+                b(++i)
+            }
+            )(0)
+        } catch (e) {
+            setTimeout(a, 5000)
+        }
+    }
+    )()
+}
+)();
+   
+
+  // Function to handle when the developer tools are opened
+const handleDevTools = () => {
+    document.body.style.display = 'none';
+    disableReactDevTools();
+    alert('Developer tools are not allowed!');
+  };
+  
+  // Set up the event listener for dev tools
+  window.addEventListener('devtoolschange', (e) => {
+    if (e.detail.isOpen) {
+      handleDevTools();
+    }
+  });
+  
+  // Check for dev tools initially
+  const isDevToolsOpen = () => {
+    return new Promise((resolve) => {
+      const threshold = 160;
+      let startTime;
+      const check = () => {
+        if (window.outerWidth - window.innerWidth > threshold) {
+          resolve(true);
+        } else {
+          resolve(false);
+        }
+        window.removeEventListener('resize', check);
+      };
+      startTime = performance.now();
+      window.addEventListener('resize', check);
+      check();
+    });
+  };
+  
+  isDevToolsOpen().then((open) => {
+    if (open) {
+      handleDevTools();
+    }
+  });
+  
