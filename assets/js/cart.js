@@ -68,8 +68,14 @@ function updateTotal() {
   const quantityInputs = document.querySelectorAll('.quantityInput');
   quantityInputs.forEach((input, index) => {
     const quantity = parseInt(input.value);
-    const price = parseFloat(cartRecent[index].price.replace('$', '').trim());
-    subtotal += price * quantity;
+    const price = cartRecent[index].price; // Get the price without attempting to replace
+
+    // Check if price is defined and is a string before using the replace method
+    if (typeof price === 'string') {
+      subtotal += parseFloat(price.replace('$', '').trim()) * quantity;
+    } else {
+      console.error(`Invalid price format for item at index ${index}`);
+    }
   });
 
   // Update subtotal in the DOM
